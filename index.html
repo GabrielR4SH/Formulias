@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Fórmulas</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+
+    <h2>Fórmulas em Diversas Áreas</h2>
+    <table id="formulaTable">
+        <tr>
+            <th>Mathematical</th>
+            <th>Physical</th>
+            <th>Algebra</th>
+            <th>Chemical</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Area of a circle: A = πr²</li>
+                    <li>Pythagorean theorem: a² + b² = c²</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Newton's second law: F = ma</li>
+                    <li>Einstein's energy equation: E = mc²</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Quadratic formula: x = (-b ± √(b² - 4ac)) / 2a</li>
+                    <li>Slope formula: m = (y₂ - y₁) / (x₂ - x₁)</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Water: H₂O</li>
+                    <li>Carbon dioxide: CO₂</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <div class="divisor-forms">
+        <div class="edit-form">
+            <h2>Adicionar Nova Fórmula</h2>
+            <form id="addFormulaForm">
+                <label for="columnSelect">Selecione uma Coluna:</label><br>
+                <select id="columnSelect" name="columnSelect">
+                    <option value="0">Mathematical</option>
+                    <option value="1">Physical</option>
+                    <option value="2">Algebra</option>
+                    <option value="3">Chemical</option>
+                </select><br><br>
+    
+                <label for="newContent">Conteúdo:</label><br>
+                <textarea id="newContent" name="newContent" rows="4" cols="50" required></textarea><br><br>
+    
+                <input type="submit" value="Adicionar">
+            </form>
+        </div>
+        <div class="insert-form">
+            <h2>Adicionar Nova Coluna</h2>
+            <form id="addColumnForm">
+                <label for="newColumn">Nome da Coluna:</label><br>
+                <input type="text" id="newColumn" name="newColumn" required><br><br>
+    
+                <label for="newColumnContent">Conteúdo Inicial:</label><br>
+                <textarea id="newColumnContent" name="newColumnContent" rows="4" cols="50" required></textarea><br><br>
+    
+                <input type="submit" value="Adicionar Coluna">
+            </form>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
